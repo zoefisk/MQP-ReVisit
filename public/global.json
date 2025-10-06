@@ -2,6 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v2.2.0/src/parser/GlobalConfigSchema.json",
   "configsList": [
     "tutorial",
+    "mszz",
     "demo-html",
     "demo-html-video",
     "demo-html-input",
@@ -51,6 +52,9 @@
   "configs": {
     "tutorial": {
       "path": "tutorial/config.json"
+    },
+    "mszz": {
+      "path": "mszz/config.json"
     },
     "demo-video-slider": {
       "path": "demo-video-slider/config.json"

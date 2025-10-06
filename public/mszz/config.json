@@ -1,0 +1,239 @@
+{
+  "$schema": "https://raw.githubusercontent.com/revisit-studies/study/main/src/parser/StudyConfigSchema.json",
+  "studyMetadata": {
+    "title": "Visualization Literacy Assessment",
+    "version": "pilot",
+    "authors": [
+      "Morgan Vasiliou",
+      "Skyler Lin",
+      "Zoe Fisk",
+      "Zachary Medailleu"
+    ],
+    "date": "2025-10-06",
+    "description": "An assessment that measures one's comprehension of graphs",
+    "organizations": [
+      "WPI"
+    ]
+  },
+  "uiConfig": {
+    "contactEmail": "zjmedailleu@wpi.edu",
+    "helpTextPath": "mszz/assets/help.md",
+    "logoPath": "revisitAssets/revisitLogoSquare.svg",
+    "withProgressBar": true,
+    "autoDownloadStudy": false,
+    "withSidebar": true
+  },
+  "components": {
+    "introduction": {
+      "type": "markdown",
+      "path": "mszz/assets/introduction.md",
+      "response": []
+    },
+    "morgan-questions": {
+      "type": "image",
+      "path": "mszz/assets/bloodglucosegraph.png",
+      "instruction": "Answer the questions below.",
+      "style": {
+        "width": "600px"
+      },
+      "response": [
+        {
+          "id": "morgan-q1",
+          "prompt": "After which two meals are blood glucose levels most similar? (Select 2)",
+          "required": true,
+          "location": "sidebar",
+          "type": "checkbox",
+          "options": [
+            "Breakfast",
+            "Lunch",
+            "Snack",
+            "Dinner"
+          ]
+        },
+        {
+          "id": "morgan-q2",
+          "prompt": "What would the person's blood glucose level look like if they skipped their snack?",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            "Blood sugar would remain constant after lunch and then spike after dinner.",
+            "Blood glucose would continue to decrease after lunch and then spike after dinner.",
+            "Blood glucose would still increase at the same time.",
+            "There would be no change to the graph."
+          ]
+        },
+        {
+          "id": "morgan-q3",
+          "prompt": "Choose the best generalization about the graph:",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            "The person’s blood sugar is consistently at dangerous levels.",
+            "The person’s blood sugar is at dangerous levels more than half of the time.",
+            "The person’s blood sugar is at dangerous levels only a few times during the day.",
+            "The person’s blood sugar is never at a dangerous level."
+          ]
+        }
+      ]
+    },
+    "zach-questions": {
+      "type": "image",
+      "path": "mszz/assets/bloodglucosegraph.png",
+      "instruction": "Answer the questions below.",
+      "style": {
+        "width": "600px"
+      },
+      "response": [
+        {
+          "id": "zach-q1",
+          "prompt": "When does the person's blood glucose reach a dangerously high level?",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            "10:00 am",
+            "2:00 pm",
+            "6:00 pm",
+            "9:00 pm"
+          ]
+        },
+        {
+          "id": "zach-q2",
+          "prompt": "When does it look like the person had lunch?",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            "10:00 am",
+            "12:00 pm",
+            "2:00 pm",
+            "4:00 pm"
+          ]
+        },
+        {
+          "id": "zach-q3",
+          "prompt": "How often does the person maintain a healthy blood sugar level?",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            "Never",
+            "Very rarely throughout the day",
+            "Most of the day",
+            "All day"
+          ]
+        }
+      ]
+    },
+    "zoe-questions": {
+      "type": "image",
+      "path": "mszz/assets/bloodglucosegraph.png",
+      "instruction": "Answer the questions below.",
+      "style": {
+        "width": "600px"
+      },
+      "response": [
+        {
+          "id": "zoe-q1",
+          "prompt": "Which meal causes the person's blood glucose to spike to its highest level?",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            "Breakfast",
+            "Lunch",
+            "Snack",
+            "Dinner"
+          ]
+        },
+        {
+          "id": "zoe-q2",
+          "prompt": "Why does the snack cause the smallest increase in blood glucose compared to the other meals?",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            "The body becomes more resistant to glucose as the day goes on.",
+            "Blood glucose levels only rise significantly in the morning.",
+            "Snacks usually contain fewer calories or carbohydrates than full meals.",
+            "The snack was eaten at the same time as dinner."
+          ]
+        },
+        {
+          "id": "zoe-q3",
+          "prompt": "What statement best describes the overall trend of the graph?",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            "Blood glucose always rises after eating and then falls back down.",
+            "Blood glucose levels stay flat throughout the day.",
+            "Blood glucose decreases after meals and increases between them.",
+            "Blood glucose remains in the same range at all times."
+          ]
+        }
+      ]
+    },
+    "skyler-questions": {
+      "type": "image",
+      "path": "mszz/assets/bloodglucosegraph.png",
+      "instruction": "Answer the questions below.",
+      "style": {
+        "width": "600px"
+      },
+      "response": [
+        {
+          "id": "skyler-q1",
+          "prompt": "Approximately what time does the person’s blood glucose level drop to its lowest point?",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            "9:00 am",
+            "11:00 am",
+            "4:00 pm",
+            "7:00 pm"
+          ]
+        },
+        {
+          "id": "skyler-q2",
+          "prompt": "If this person had diabetes and needed to avoid dangerous blood sugar spikes, which meal would they most likely need to reduce or change?",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            "Breakfast",
+            "Lunch",
+            "Snack",
+            "Dinner"
+          ]
+        },
+        {
+          "id": "skyler-q3",
+          "prompt": "Check off the correct generalization that can be made about the data.",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            "Blood glucose spikes a normal amount after meals.",
+            "Blood glucose spikes very slightly after meals.",
+            "Blood glucose stays the same after meals.",
+            "There is no clear blood glucose pattern."
+          ]
+        }
+      ]
+    }
+  },
+  "sequence": {
+    "order": "fixed",
+    "components": [
+      "introduction",
+      "morgan-questions",
+      "zach-questions",
+      "zoe-questions",
+      "skyler-questions"
+    ]
+  }
+}

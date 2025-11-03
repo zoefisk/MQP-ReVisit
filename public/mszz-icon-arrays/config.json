@@ -1,0 +1,237 @@
+{
+  "$schema": "https://raw.githubusercontent.com/revisit-studies/study/main/src/parser/StudyConfigSchema.json",
+  "studyMetadata": {
+    "title": "Icon Array Visualization Literacy",
+    "version": "pilot",
+    "authors": [
+      "Morgan Vasiliou",
+      "Skyler Lin",
+      "Zoe Fisk",
+      "Zachary Medailleu"
+    ],
+    "date": "2025-10-21",
+    "description": "An assessment that measures one's comprehension of icon arrays",
+    "organizations": [
+      "WPI"
+    ]
+  },
+  "uiConfig": {
+    "contactEmail": "zjmedailleu@wpi.edu",
+    "helpTextPath": "mszz-icon-arrays/assets/help.md",
+    "logoPath": "revisitAssets/revisitLogoSquare.svg",
+    "withProgressBar": true,
+    "autoDownloadStudy": false,
+    "withSidebar": true
+  },
+  "components": {
+    "introduction": {
+      "type": "markdown",
+      "path": "mszz-icon-arrays/assets/introduction.md",
+      "response": []
+    },
+    "question-set-1": {
+      "type": "image",
+      "path": "mszz-icon-arrays/assets/icon-array-graph1.png",
+      "instruction": "Answer the questions below.",
+      "style": {
+        "width": "600px"
+      },
+      "response": [
+        {
+          "id": "q1",
+          "prompt": "How much of the population has medical condition 1?",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            "The entire population",
+            "Most of the population",
+            "Half of the population",
+            "A small amount of the population"
+          ]
+        },
+        {
+          "id": "q2",
+          "prompt": "Pick the correct generalization:",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            "Medical condition 1 is more common and has an extremely accurate test.",
+            "Medical condition 1 is more common and has an inaccurate test.",
+            "Medical condition 2 is more common and has an extremely accurate test.",
+            "Medical condition 2 is more common and has an inaccurate test."
+          ]
+        },
+        {
+          "id": "q3",
+          "prompt": "Among all 100 people, what percentage had medical condition 2 and received a positive test result?",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            "4%",
+            "19%",
+            "20%",
+            "80%"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "q1",
+          "answer": "Most of the population"
+        },
+        {
+          "id": "q2",
+          "answer": "Medical condition 1 is more common and has an inaccurate test."
+        },
+        {
+          "id": "q3",
+          "answer": "4%"
+        }
+      ],
+      "provideFeedback": true,
+      "allowFailedTraining": false,
+      "trainingAttempts": 2
+    },
+    "question-set-2": {
+      "type": "image",
+      "path": "mszz-icon-arrays/assets/icon-array-graph2.png",
+      "instruction": "Answer the questions below.",
+      "style": {
+        "width": "600px"
+      },
+      "response": [
+        {
+          "id": "q4",
+          "prompt": "Is the test for Disease A or Disease B more accurate?",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            "Disease A",
+            "Disease B",
+            "You can't tell from the graph"
+          ]
+        },
+        {
+          "id": "q5",
+          "prompt": "Pick the correct generalization:",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            "The majority of people with Disease A receive positive test results.",
+            "The majority of people with Disease B receive positive test results.",
+            "Both populations have equal amounts of positive test results."
+          ]
+        },
+        {
+          "id": "q6",
+          "prompt": "How many patients have Disease A and received a positive test result?",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            "1",
+            "4",
+            "16",
+            "20"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "q4",
+          "answer": "Disease A"
+        },
+        {
+          "id": "q5",
+          "answer": "The majority of people with Disease A receive positive test results."
+        },
+        {
+          "id": "q6",
+          "answer": "4"
+        }
+      ],
+      "provideFeedback": true,
+      "allowFailedTraining": false,
+      "trainingAttempts": 2
+    },
+    "question-set-3": {
+      "type": "image",
+      "path": "mszz-icon-arrays/assets/icon-array-graph3.png",
+      "instruction": "Answer the questions below.",
+      "style": {
+        "width": "600px"
+      },
+      "response": [
+        {
+          "id": "q7",
+          "prompt": "How much of the population has the medical condition?",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            "The entire population",
+            "Most of the population",
+            "Half of the population",
+            "A small amount of the population"
+          ]
+        },
+        {
+          "id": "q8",
+          "prompt": "Pick the correct generalization:",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            "There's a high chance you will test positive if you don’t have the medical condition.",
+            "There’s a low chance you will test positive if you don’t have the medical condition.",
+            "You will never test positive if you don’t have the medical condition."
+          ]
+        },
+        {
+          "id": "q9",
+          "prompt": "What percentage of the population tested positive for the medical condition?",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            "5%",
+            "20%",
+            "50%",
+            "80%"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "q7",
+          "answer": "A small amount of the population"
+        },
+        {
+          "id": "q8",
+          "answer": "There’s a low chance you will test positive if you don’t have the medical condition."
+        },
+        {
+          "id": "q9",
+          "answer": "20%"
+        }
+      ],
+      "provideFeedback": true,
+      "allowFailedTraining": false,
+      "trainingAttempts": 2
+    }
+  },
+  "sequence": {
+    "order": "fixed",
+    "components": [
+      "introduction",
+      "question-set-1",
+      "question-set-2",
+      "question-set-3"
+    ]
+  }
+}

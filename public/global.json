@@ -3,6 +3,7 @@
   "configsList": [
     "tutorial",
     "mszz",
+    "mszz-icon-arrays",
     "demo-html",
     "demo-html-video",
     "demo-html-input",
@@ -55,6 +56,9 @@
     },
     "mszz": {
       "path": "mszz/config.json"
+    },
+    "mszz-icon-arrays": {
+      "path": "mszz-icon-arrays/config.json"
     },
     "demo-video-slider": {
       "path": "demo-video-slider/config.json"

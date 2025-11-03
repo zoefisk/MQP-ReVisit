@@ -1,0 +1,1 @@
+Welcome to our study. We are studying visualization literacy and the like. Answer each question to the best of your ability.

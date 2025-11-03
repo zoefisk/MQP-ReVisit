@@ -76,7 +76,24 @@
             "The person’s blood sugar is never at a dangerous level."
           ]
         }
-      ]
+      ],
+      "correctAnswer": [
+        {
+          "id": "morgan-q1",
+          "answer": ["Breakfast", "Lunch"]
+        },
+        {
+          "id": "morgan-q2",
+          "answer": "Blood glucose would continue to decrease after lunch and then spike after dinner."
+        },
+        {
+          "id": "morgan-q3",
+          "answer": "The person’s blood sugar is at dangerous levels only a few times during the day."
+        }
+      ],
+      "provideFeedback": true,
+      "allowFailedTraining": false,
+      "trainingAttempts": 2
     },
     "zach-questions": {
       "type": "image",
@@ -125,7 +142,24 @@
             "All day"
           ]
         }
-      ]
+      ],
+      "correctAnswer": [
+        {
+          "id": "zach-q1",
+          "answer": "9:00 pm"
+        },
+        {
+          "id": "zach-q2",
+          "answer": "12:00 pm"
+        },
+        {
+          "id": "zach-q3",
+          "answer": "Most of the day"
+        }
+      ],
+      "provideFeedback": true,
+      "allowFailedTraining": false,
+      "trainingAttempts": 2
     },
     "zoe-questions": {
       "type": "image",
@@ -174,7 +208,24 @@
             "Blood glucose remains in the same range at all times."
           ]
         }
-      ]
+      ],
+      "correctAnswer": [
+        {
+          "id": "zoe-q1",
+          "answer": "Dinner"
+        },
+        {
+          "id": "zoe-q2",
+          "answer": "Snacks usually contain fewer calories or carbohydrates than full meals."
+        },
+        {
+          "id": "zoe-q3",
+          "answer": "Blood glucose always rises after eating and then falls back down."
+        }
+      ],
+      "provideFeedback": true,
+      "allowFailedTraining": false,
+      "trainingAttempts": 2
     },
     "skyler-questions": {
       "type": "image",
@@ -223,7 +274,24 @@
             "There is no clear blood glucose pattern."
           ]
         }
-      ]
+      ],
+      "correctAnswer": [
+        {
+          "id": "skyler-q1",
+          "answer": "11:00 am"
+        },
+        {
+          "id": "skyler-q2",
+          "answer": "Dinner"
+        },
+        {
+          "id": "skyler-q3",
+          "answer": "Blood glucose spikes a normal amount after meals."
+        }
+      ],
+      "provideFeedback": true,
+      "allowFailedTraining": false,
+      "trainingAttempts": 2
     }
   },
   "sequence": {
